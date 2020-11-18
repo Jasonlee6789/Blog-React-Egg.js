@@ -1,14 +1,13 @@
-import React, { useState } from "react";
 import Head from "next/head";
-// import styles from "../styles/Home.module.css";
-import { Row, Col, List, icon } from "antd";
+import styles from "../styles/Home.module.css";
+import { Row, Col } from "antd";
 import Header from "../components/Header";
 
-const Home = () => {
+export default function Detailed() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
-        <title>Home</title>
+        <title>Detailed</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
@@ -25,6 +24,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}
