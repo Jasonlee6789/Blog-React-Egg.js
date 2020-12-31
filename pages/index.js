@@ -4,6 +4,8 @@ import Head from "next/head";
 import "../styles/pages/index.css";
 import { Row, Col, List, Icon } from "antd";
 import Header from "../components/Header";
+import Author from "../components/Author";
+import Ads from "../components/Ads";
 
 const Home = () => {
   const [mylist, setMylist] = useState([
@@ -64,7 +66,10 @@ const Home = () => {
             />
           </Col>
           <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
-            右侧
+            <>
+              <Author />
+              <Ads />
+            </>
           </Col>
         </Row>
       </div>
